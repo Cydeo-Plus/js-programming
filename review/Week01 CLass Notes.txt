@@ -1,0 +1,34 @@
+Week01 Review:
+	Topics:
+		Core javaScript
+
+    AI Tools:
+        Perplexity
+        Tabnine/GitHub Copilot
+
+    Asynchronious Programming:
+            Promises
+            Async & Await
+
+NodeJS: 18 +
+
+IDE: IntelliJ, Eclipse, PyCharm, Visual Studio.
+
+
+Programming languages: Python, Java, C#, Ruby.
+
+
+Dynamic Typing: JavaScript, Python
+
+    Interpreter
+
+    var num
+    let variableName
+
+Static Typing: Java, C#, C++, Ruby, TypeScript
+
+    Compiler
+
+    int variableName
+
+ Come back at 12:00 PM EST
