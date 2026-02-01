@@ -10,6 +10,40 @@ Week01 Review:
             Promises
             Async & Await
 
+Promise: Future value/error (50/50)
+        represents a vlaue that will be available either now, or in future or never
+
+Task01:
+    Step1: Promse to give a value
+    Step2
+    Step3
+    Step4
+    Step5
+    Step6: return value/error
+
+Task02:
+    Step1
+    Step2
+    Step3
+    Step4: needs the value of task01 ==> await for promise
+    Step5
+
+Task03:
+    Step1
+    Step2
+    Step3: needs the value of task01 ===> await for promise
+    Step4
+
+Task04:
+    Step1
+    Step2: needs the value of task01 ===>  await for promise
+    Step3
+    Step4
+    Step5
+
+
+
+
 NodeJS: 18 +
 
 IDE: IntelliJ, Eclipse, PyCharm, Visual Studio.
@@ -31,4 +65,99 @@ Static Typing: Java, C#, C++, Ruby, TypeScript
 
     int variableName
 
- Come back at 12:00 PM EST
+
+
+JS Data Strcuture:
+    Array
+    Set
+    Map
+
+Java:
+    Array
+    List
+    Set
+    Queue
+    Map
+
+
+    ===============================
+
+
+    Word Break Problem
+Given an input string and a dictionary of words, find out if the input string can be segmented
+into a space-separated sequence of dictionary words. See following examples for more details.
+This is a famous Google interview question, also being asked by many other companies now a days.
+Consider the following dictionary
+	{ i, like, sam, sung, samsung, mobile, ice, cream, icecream, man, go, mango}
+	Input:  ilike
+	Output: Yes
+	The string can be segmented as "i like".
+
+	Input:  ilikesamsung
+	Output: Yes
+	The string can be segmented as "i like samsung" or "i like sam sung".
+
+
+===================================
+
+class BasePage{
+
+    page
+
+    scrollToTop
+
+    scrollToButtom
+
+    getTitle
+
+    getUrl
+    ...
+}
+
+class LoginPage extends basepage{
+
+    constrcutor(){
+        this.usernameInputBox = locator("#username");
+        this.passwordInputBox = locator("#password");
+        this.loginButton = locator("button[name='login']);
+    }
+
+    public async enterUsername(username){
+        this.usernameInputBox.fill(username);
+    }
+
+    public async enterPassword(password){
+        this.passwordInputBox.fill(password);
+    }
+
+    public async clickLoginButton(){
+        this.loginButton.click();
+    }
+
+    public async login(username, password) {
+        this.enterUsername(username);
+        this.enterPassword(password);
+        this.click();
+    }
+
+}
+
+
+
+test(){ // with POM
+    LoginPage loginPage = new LoginPage();
+
+    loginPage.login();
+}
+
+test(){ // without POM
+    let usernameInputBox = locator("#username");
+    let passwordInputBox = locator("#password");
+    let loginButton = locator("button[name='login']);
+
+    usernameInputBox.fill(username);
+    passwordInputBox.fill(password);
+    loginButton.click()
+}
+
+

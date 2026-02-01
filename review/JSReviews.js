@@ -32,7 +32,7 @@ console.log(actualResult == expectedResult);
 
 console.log("----------------------------");
 
-let environment = "dev";
+let environment = "test";
 
 if (environment === "test") {
     console.log("Running in test environment");
@@ -43,7 +43,7 @@ if (environment === "test") {
 }else if(environment === "uat") {
     console.log("Running in UAT environment");
 }else{
-    console.log("Invalid environment");
+    throw new Error("Invalid environment");
 }
 
 console.log("----------------------------");
@@ -132,4 +132,58 @@ console.log(actualTitle === expectedTitle);
 console.log(actualTitle.toLowerCase() === expectedTitle.toLowerCase());
 
 console.log(`Expected title is: ${expectedTitle}, but the actual title is: ${actualTitle}`);
+
+console.log("-------------------------------------");
+
+let array = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]; // accepts duplicates
+
+let set = new Set(array); // does not accept duplicate
+
+let map = {"name": "John", "age": 30, "city": "New York"};
+
+console.log(`Array: ${array}`);
+
+console.log(`Set: ${Array.from(set)}`);
+
+console.log(`Map: ${JSON.stringify(map)}`);
+
+console.log(map["name"]);
+
+console.log("-------------------------------------");
+
+//use for loop to iterate over the array and print each element.
+for(let i = 0; i < array.length; i++){
+    console.log(array[i]);
+}
+
+console.log("-------------------------------------");
+
+/*
+Create a function that can verify if string is palnidrome, and returns true if it's, otherwise return false.
+do not use any ready method or functions.
+*/
+function isPalindrome(str){
+    let reversedStr = "";
+
+    for(let i = str.length - 1; i >= 0; i--){
+        reversedStr += str[i];
+    }
+
+    if(str === reversedStr){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+console.log("--------------------------");
+
+
+let {square} = require("../day02/Utility.js")
+
+console.log(square(100));
+
+
+
+
 
